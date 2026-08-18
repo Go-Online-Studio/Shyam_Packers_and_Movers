@@ -12,10 +12,10 @@ export default defineConfig(() => {
       },
     },
     esbuild: {
-      target: 'esnext',
+      target: 'es2022',
     },
     build: {
-      target: 'esnext',
+      target: 'es2022',
       rollupOptions: {
         input: {
           main: path.resolve(__dirname, 'index.html'),

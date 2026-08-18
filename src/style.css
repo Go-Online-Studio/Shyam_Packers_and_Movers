@@ -18,11 +18,11 @@ body {
   overflow-x: hidden;
 }
 
-/* Glassmorphism & Backdrop Filters (Default property on top, WebKit on bottom) */
+/* Glassmorphism & Backdrop Filters (W3C Standard: -webkit- prefix first, standard property last) */
 .glass {
   background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 40px;
 }
@@ -32,84 +32,84 @@ body {
   padding-top: 1rem;
 }
 
-/* Explicit backdrop-filter utilities (Default on top, WebKit on bottom) */
+/* Explicit backdrop-filter utilities (-webkit- prefix first, standard property last) */
 .backdrop-blur-none {
-  backdrop-filter: blur(0);
   -webkit-backdrop-filter: blur(0);
+  backdrop-filter: blur(0);
 }
 .backdrop-blur-xs {
-  backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 .backdrop-blur-sm {
-  backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
 .backdrop-blur-md {
-  backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
 }
 .backdrop-blur-lg {
-  backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
 }
 .backdrop-blur-xl {
-  backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
 }
 .backdrop-blur-2xl {
-  backdrop-filter: blur(40px);
   -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
 }
 .backdrop-blur-3xl {
-  backdrop-filter: blur(64px);
   -webkit-backdrop-filter: blur(64px);
+  backdrop-filter: blur(64px);
 }
 
-/* Explicit filter blur utilities (Default on top, WebKit on bottom) */
+/* Explicit filter blur utilities (-webkit- prefix first, standard property last) */
 .blur-none {
-  filter: blur(0);
   -webkit-filter: blur(0);
+  filter: blur(0);
 }
 .blur-xs {
-  filter: blur(4px);
   -webkit-filter: blur(4px);
+  filter: blur(4px);
 }
 .blur-sm {
-  filter: blur(4px);
   -webkit-filter: blur(4px);
+  filter: blur(4px);
 }
 .blur {
-  filter: blur(8px);
   -webkit-filter: blur(8px);
+  filter: blur(8px);
 }
 .blur-md {
-  filter: blur(12px);
   -webkit-filter: blur(12px);
+  filter: blur(12px);
 }
 .blur-lg {
-  filter: blur(16px);
   -webkit-filter: blur(16px);
+  filter: blur(16px);
 }
 .blur-xl {
-  filter: blur(24px);
   -webkit-filter: blur(24px);
+  filter: blur(24px);
 }
 .blur-2xl {
-  filter: blur(40px);
   -webkit-filter: blur(40px);
+  filter: blur(40px);
 }
 .blur-3xl {
-  filter: blur(64px);
   -webkit-filter: blur(64px);
+  filter: blur(64px);
 }
 .blur-\[100px\] {
-  filter: blur(100px);
   -webkit-filter: blur(100px);
+  filter: blur(100px);
 }
 .blur-\[120px\] {
-  filter: blur(120px);
   -webkit-filter: blur(120px);
+  filter: blur(120px);
 }
 
 /* Neomorphism */
