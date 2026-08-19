@@ -17,6 +17,9 @@ body {
   font-family: ui-sans-serif, system-ui, sans-serif;
   overflow-x: hidden;
 }
+h1,.h1{
+  line-height: 1.1;
+}
 
 /* Glassmorphism & Backdrop Filters (W3C Standard: -webkit- prefix first, standard property last) */
 .glass {
