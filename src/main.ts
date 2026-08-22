@@ -1,7 +1,12 @@
 import Swiper from 'swiper';
 import { Autoplay, Navigation, Pagination, FreeMode } from 'swiper/modules';
+import { initLeadPopupModal } from './popup-modal';
 
-document.addEventListener('DOMContentLoaded', () => {
+function initApp() {
+  // Initialize Auto-lead popup modal on all pages
+  initLeadPopupModal();
+
+
   // 1. Intersection Observer for Scroll Animations
   const observerOptions = {
     root: null,
@@ -270,7 +275,14 @@ document.addEventListener('DOMContentLoaded', () => {
       window.open(fullUrl, "_blank");
     }, 400);
   });
-});
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initApp);
+} else {
+  initApp();
+}
+
 
 
 
