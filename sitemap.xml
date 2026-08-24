@@ -1,43 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml-stylesheet type="text/xsl" href="https://shyampackers.co.in/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- ============================================================
+       Shyam Packers & Movers — XML Sitemap
+       Domain  : https://shyampackers.co.in
+       Updated : 2026-08-24
+       Pages   : 8
+  ================================================================ -->
+
+  <!-- HOME PAGE — Highest priority, crawled most frequently -->
   <url>
-    <loc>https://www.shyampackers.co.in/</loc>
+    <loc>https://shyampackers.co.in/</loc>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- SERVICES — Core offering page -->
   <url>
-    <loc>https://www.shyampackers.co.in/about.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.shyampackers.co.in/services.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.shyampackers.co.in/branches.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.shyampackers.co.in/faqs.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.shyampackers.co.in/contact.html</loc>
+    <loc>https://shyampackers.co.in/services</loc>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- BRANCHES — All branch locations -->
   <url>
-    <loc>https://www.shyampackers.co.in/privacy-policy.html</loc>
+    <loc>https://shyampackers.co.in/branches</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ABOUT -->
+  <url>
+    <loc>https://shyampackers.co.in/about</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- CONTACT — Lead-gen page, moderate priority -->
+  <url>
+    <loc>https://shyampackers.co.in/contact</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- FAQs -->
+  <url>
+    <loc>https://shyampackers.co.in/faqs</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- PRIVACY POLICY -->
+  <url>
+    <loc>https://shyampackers.co.in/privacy-policy</loc>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+
+  <!-- LEGAL DISCLAIMER -->
   <url>
-    <loc>https://www.shyampackers.co.in/legal-disclaimer.html</loc>
+    <loc>https://shyampackers.co.in/legal-disclaimer</loc>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+
 </urlset>

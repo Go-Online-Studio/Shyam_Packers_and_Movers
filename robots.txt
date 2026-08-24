@@ -1,4 +1,144 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.shyampackers.co.in/sitemap.xml
+# ---------------------------------------------------------------
+# DISALLOW: Non-public / internal paths
+# ---------------------------------------------------------------
+Disallow: /assets/
+Disallow: /images/
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.css$
+
+# ---------------------------------------------------------------
+# MAJOR SEARCH ENGINES — Full access to all pages
+# ---------------------------------------------------------------
+
+User-agent: Googlebot
+Allow: /
+Allow: /images/
+
+User-agent: Googlebot-Image
+Allow: /images/
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: facebot
+Allow: /
+
+User-agent: ia_archive
+Allow: /
+
+# ---------------------------------------------------------------
+# AI CRAWLERS — Explicitly allowed for AI training & references
+# (Enables appearance in ChatGPT, Perplexity, Claude, Gemini, etc.)
+# ---------------------------------------------------------------
+
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+
+# OpenAI (browsing plugin)
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic / Claude
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Google Gemini / Bard
+User-agent: Google-Extended
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Apple AI
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Common Crawl (used by many AI projects)
+User-agent: CCBot
+Allow: /
+
+# Amazon / Alexa
+User-agent: ia_archiver
+Allow: /
+
+# Cohere AI
+User-agent: cohere-ai
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# Mistral / LeChat
+User-agent: MistralAI
+Allow: /
+
+# ByteDance / Doubao AI
+User-agent: Bytespider
+Allow: /
+
+# Baidu AI
+User-agent: baiduspider-render
+Allow: /
+
+# Diffbot (AI extraction)
+User-agent: Diffbot
+Allow: /
+
+# ---------------------------------------------------------------
+# DISALLOW MALICIOUS / SPAM BOTS
+# ---------------------------------------------------------------
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+# ---------------------------------------------------------------
+# SITEMAP
+# ---------------------------------------------------------------
+Sitemap: https://shyampackers.co.in/sitemap.xml
