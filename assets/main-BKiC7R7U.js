@@ -195,3 +195,16 @@ I am interested in your *${T}* service and would like to get a free quote and de
 Please share pricing, availability, and process.
 
 _Sent via Website Services_`,p=encodeURIComponent(S),g=`${d()}?phone=${l}&text=${p}`;v(`Connecting to WhatsApp for ${T}...`),setTimeout(()=>{window.open(g,"_blank")},400)})}document.readyState==="loading"?document.addEventListener("DOMContentLoaded",be):be();
+
+// Dynamic Current Year Handler
+function updateCurrentYear() {
+  const currentYear = new Date().getFullYear();
+  document.querySelectorAll('.year').forEach(function(el) {
+    el.textContent = currentYear;
+  });
+}
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', updateCurrentYear);
+} else {
+  updateCurrentYear();
+}
