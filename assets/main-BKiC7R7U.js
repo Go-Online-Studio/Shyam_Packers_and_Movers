@@ -208,3 +208,24 @@ if (document.readyState === 'loading') {
 } else {
   updateCurrentYear();
 }
+
+// Dynamic WhatsApp FAB link handler
+function initDynamicWhatsAppFAB() {
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 768;
+  const baseUrl = isMobile ? "https://api.whatsapp.com/send" : "https://web.whatsapp.com/send";
+  const phone = "919824252470";
+  const defaultMsg = encodeURIComponent("Hello Shyam Packers & Movers,\nI would like to inquire about your relocation and shifting services. Please provide more details.");
+  const targetUrl = `${baseUrl}?phone=${phone}&text=${defaultMsg}`;
+  
+  document.querySelectorAll('.fab-whatsapp').forEach(function(fab) {
+    fab.setAttribute('href', targetUrl);
+  });
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initDynamicWhatsAppFAB);
+} else {
+  initDynamicWhatsAppFAB();
+}
+window.addEventListener('resize', initDynamicWhatsAppFAB);
+
