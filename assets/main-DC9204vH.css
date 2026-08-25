@@ -14,3 +14,9 @@
   text-underline-offset: 4px !important;
   transform: translateY(-1px) scale(1.02);
 }
+
+@media(max-width:500px){
+footer [href*="https://maps.app.goo.gl/"]{
+  max-width: 168px;
+}
+}
